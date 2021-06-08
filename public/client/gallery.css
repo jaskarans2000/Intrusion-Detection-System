@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#gallery-button {
+    position: fixed;
+    height: 3rem;
+    z-index: 2;
+    width: 3rem;
+    bottom: 10vh;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    right: 5.3vw;
+    background-color: #222;
+  }
+  
+  .gallery-delete-button,
+  .gallery-download-button {
+    border: none;
+    height: 10%;
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+
+  .gallery-vid-container video {
+    height: 80%;
+    display: block;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  
+
+  .gallery-vid-container {
+    width: 25rem;
+    background: white;
+    border-radius: 1rem;
+    height: 25rem;
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .gallery{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+  }
+  
+  .gallery-back {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    height: 3rem;
+    display: flex;
+    width: 3rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+
+  .gallery-banner{
+      position: fixed;
+      top: 0%;
+      height: 5rem;
+      width: 100%;
+      background-color: #d91d1d;
+  }
+
+
+  .gallery-titlediv{
+      margin: 0 auto;
+      height: 100%;
+      width: 7rem;
+      display: flex;
+  }
+
+  
+
+  .gallery-delete-button {
+    background: #d91d1d;
+  }
+  
+  .gallery-download-button {
+    background: #291e1e;
+  }
+  

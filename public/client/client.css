@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url("footage.jpg");
+    object-fit:contain;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+.powerBtn{
+    margin: 0 auto;
+    margin-top: 8rem;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.power{
+    font-size: 3rem;
+}
+
+
+.videofeed{
+    display: flex;
+    height: 63vh;
+    /* width: 100vh; */
+    /* overflow: hidden; */
+    margin-top: 6rem;
+    justify-content: center;
+}
+
+.remote-video{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+.recordbtn-container{
+    position: fixed;
+    right: 5vw;
+    top: 30vh;
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    border: 0.8rem solid white;
+    border-radius: 50%;
+}
+
+.record-btn{
+    height: 3rem;
+    width: 3rem;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.timing{
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 17vh;
+    left: 5%;
+    display: none;
+    z-index: 6;
+}
+
+.gallery{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+}
+
+.invisible{
+    display: none;
+}
+
+.record-animation{
+    animation: scaleUp 1s ;
+    animation-iteration-count: infinite;
+}
+
+.joinBtn-animation{
+    animation: scaleUp 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaleUp {
+    0%{
+        transform: scale(1);
+    }
+   50%{
+    transform: scale(1.08);
+   }
+    100%{
+        transform: scale(1);
+    }
+    
+}

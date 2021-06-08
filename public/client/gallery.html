@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordings</title>
+    <link rel="shortcut icon" href="cctv.png" type="image/x-icon">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="gallery-banner">
+        <div class="gallery-titlediv">
+            <img src="gallery-image-icon.jpg" alt="" >
+            <h1 style="color: white;">Recordings</h1>
+        </div>
+    </div>
+    <div class="gallery-back">
+        <span class="material-icons-outlined material-icons">
+            arrow_back
+            </span>
+    </div>
+    <div class="gallery"></div>
+    <script src="dbscript.js"></script>
+    <script>
+        let backBtn = document.querySelector(".gallery-back");
+      backBtn.addEventListener("click", function () {
+        location.assign("client.html");
+      });
+        setTimeout(function () {
+        viewMedia();
+      }, 100);
+    </script>
+</body>
+</html>

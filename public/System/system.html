@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrusion Detection System</title>
+    <script>
+        const ROOM_ID="<%=roomId %>"
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="system.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="system-icon.png" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+</head>
+<body>
+    <div class="header">Intrusion Detection System</div>
+    <div class="loader"></div>
+    <div class="powerBtn invisible">
+        <span class="material-icons-outlined material-icons power">
+            power_settings_new
+            </span>
+    </div>
+    <div class="liveView">
+
+        <video id="local-video" class="systemVideo" width="640" height="480" autoplay></video>
+    </div>
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="env.js"></script>
+    <script src="system.js" defer></script>
+</body>
+</html>
